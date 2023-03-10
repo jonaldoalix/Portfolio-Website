@@ -1,11 +1,12 @@
 # Portfolio Website
 
-<div style="display: flex; flex-direction: row; flex-wrap: nowrap">
-  <div style="float:left;">
+<div>
     <p>Thanks for checking out this repo!</p>
     <p>This is the code behind jonaldoalix.com and I'm happy to share it!</p>
     <p>It's been made easily customizable so that anyone can use this as a starting point and reuse most of the code to make their own modern react developer portfolio website.</p>
-    <p>Want to see it live or contract me to adapt a version of this for yourself? Need me to build something else? Check out this repo and contact me <a href="https://jonaldoalix.com">here!</a></p>
+    <p>Want to see it live or contract me to adapt a version of this for yourself? Need me to build something else? Check out this repo and contact me 
+      <a href="https://jonaldoalix.com">here!</a>
+    </p>
   </div>
   <div style="float:right;">
     <p align="center">
