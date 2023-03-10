@@ -1,4 +1,3 @@
-
 # Portfolio Website
 <div>
   <p>Thanks for checking out this repo!</p>
