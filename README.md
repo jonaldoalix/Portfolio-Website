@@ -1,6 +1,6 @@
 # Portfolio Website
 
-<div style="display: flex; flex-direction: row; flex-wrap: wrap">
+<div style="display: flex; flex-direction: row; flex-wrap: nowrap">
   <div>
     <p>Thanks for checking out this repo!</p>
     <p>This is the code behind jonaldoalix.com and I'm happy to share it!</p>
