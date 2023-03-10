@@ -1,12 +1,7 @@
 
 # Portfolio Website
-<styles>
-  .heading {
-    display: flex;
-    flex-direction: row;
-  }
-</styles>
-<div class="heading">
+
+<div style="display:flex; flex-direction: row;">
   <div>
     <p>Thanks for checking out this repo!</p>
     <p>This is the code behind jonaldoalix.com and I'm happy to share it!</p>
