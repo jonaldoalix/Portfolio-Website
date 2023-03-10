@@ -1,11 +1,11 @@
 
 # Portfolio Website
-<style>
+<styles>
   .heading {
     display: flex;
     flex-direction: row;
   }
-</style>
+</styles>
 <div class="heading">
   <div>
     <p>Thanks for checking out this repo!</p>
