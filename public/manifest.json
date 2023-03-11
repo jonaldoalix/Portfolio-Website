@@ -1,0 +1,33 @@
+{
+  "short_name": "Jonaldo Alix",
+  "name": "JonaldoAlix.com",
+  "id": "https://jonaldoalix.com",
+  "description": "Personal Website and Portfolio of Jonaldo Alix.",
+  "icons": [
+    {
+      "src": "/JAColorizedLogo16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/JAColorizedLogo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/JAColorizedLogo384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#171c28",
+  "orientation": "portrait"
+}
