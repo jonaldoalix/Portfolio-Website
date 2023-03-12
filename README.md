@@ -1,36 +1,22 @@
+
 # Portfolio Website
-<div>
-  <p>Thanks for checking out this repo!</p>
-  <p>This is the code behind jonaldoalix.com and I'm happy to share it!</p>
-  <p>It's been made easily customizable so that anyone can use this as a starting point and reuse most of the code to make their own modern react developer portfolio website.</p>
-  <p>Want to see it live or contract me to adapt a version of this for yourself? Need me to build something else? Check out this repo and contact me <a href="https://jonaldoalix.com">here!</a></p>
-</div>
 
-## Run Locally
+Thanks for checking out this repo! 
 
-Clone the project
+This is the code behind jonaldoalix.com and I'm happy to share it! 
 
-```bash
-  git clone https://github.com/jonaldoalix/Portfolio-Website.git
-```
+It's been made easily personalizable so that anyone can use this as a starting point and reuse most of the code to make their own modern react developer portfolio website.  
 
-Go to the project directory
+Want to see it live or contract me to adapt a version of this for yourself? Like me to build something else? Check out this repo live and contact me [here!](https://jonaldoalix.com) 
 
-```bash
-  cd my-project
-```
 
-Install dependencies
+## To Personalize
 
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm start
-```
+Once you have a copy of the repo installed locally:
+- Open the .env.example file and add in your tokens and values.
+- Open the portfolio.js file and modify the values in the file to customize the contents of the portfolio.
+- Open the _globalColor.scss file and modify the colors as desired to make the aesthetics to your liking.
+- Replace images and animations as desired to complete personalizing the portfolio.
 
 #
 <p align="center">
