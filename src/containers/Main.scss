@@ -1,0 +1,23 @@
+@import "../_globalColor";
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: white;
+  transition: "0.1s";
+  scrollbar-color: $lightBackground1 $darkBackground;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: $lightBackground1;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: $darkBackground;
+}
