@@ -14,11 +14,11 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Developer",
-  title: "Hi! I'm a developer!",
+  username: "Demo",
+  title: "Hi! I'm Demo!",
   subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
   quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  resumeLink: "", // "./filename.pdf"
+  resumeLink: "#", // "./filename.pdf"
   resumeLinkLabel: "View Resume",
   displayGreeting: true
 };
@@ -194,12 +194,12 @@ const educationInfo = {
 // Your top stacks
 const techStack = {
   viewSkillBars: true,
-  title: "Measurement You Want To Highlight",
+  title: "Stack Highlight",
   unit: "unit of measurement",
   experience: [
     {
       Stack: "Name of Measurement",
-      progressPercentage: "100%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Name of Measurement",
