@@ -1,0 +1,29 @@
+@import "../../_globalColor";
+
+.centerContent {
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0rem;
+  box-shadow: $darkBoxShadow 0px 10px 30px -15px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tw-main-div {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 15px;
+  width: auto;
+  padding: 1.5rem;
+}
+.twitter-component {
+  width: auto;
+  padding: 1.5rem;
+}
+
+.timeline-Header-title {
+  font-size: 56px;
+  font-weight: 100 !important;
+}

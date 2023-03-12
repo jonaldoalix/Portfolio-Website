@@ -1,0 +1,55 @@
+@import "../../_globalColor";
+
+.experience-cards-div {
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  gap: 1.5rem 1.5rem;*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.experience-cards-div > * {
+  flex: 1 1 390px;
+}
+
+.experience-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.experience-container {
+  display: flex;
+  width: 90%;
+  padding: 30px 10px;
+  margin: 0px auto;
+  //margin-top: 0rem;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.experience-container > * {
+  flex: 1 1 390px;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .experience-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .experience-cards-div {
+    flex-direction: column;
+    //height: 100%;
+  }
+}
