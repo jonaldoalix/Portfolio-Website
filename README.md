@@ -13,7 +13,7 @@ Want to see it live or contract me to adapt a version of this for yourself? Like
 ## To Personalize
 
 Once you have a copy of the repo installed locally:
-- Open the .env.example file and add in your tokens and values.
+- Copy the .env.example file and name it .env.  Uncomment and populate the variables you intend to use and then save it.
 - Open the portfolio.js file and modify the values in the file to customize the contents of the portfolio.
 - Open the _globalColor.scss file and modify the colors as desired to make the aesthetics to your liking.
 - Replace images and animations as desired to complete personalizing the portfolio.
