@@ -16,6 +16,7 @@ Once you have a copy of the repo installed locally:
 - Copy the .env.example file and name it .env.  Uncomment and populate the variables you intend to use and then save it.
 - Open the portfolio.js file and modify the values in the file to customize the contents of the portfolio.
 - Open the _globalColor.scss file and modify the colors as desired to make the aesthetics to your liking.
+- Update the information in ./public/index.html including the title and meta data and save.
 - Replace images and animations as desired to complete personalizing the portfolio.
 
 #
