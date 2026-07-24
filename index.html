@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alex Rivera | Full-Stack Engineer</title>
+    <meta name="title" content="Alex Rivera | Full-Stack Engineer" />
+    <meta name="author" content="Alex Rivera" />
+    <meta
+      name="description"
+      content="Portfolio template for a full-stack engineer. Replace this copy with your own work, skills, and contact details."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://example.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alex Rivera" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:title" content="Alex Rivera | Full-Stack Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio template for a full-stack engineer. Replace this copy with your own work, skills, and contact details."
+    />
+    <meta property="og:image" content="https://example.com/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alex Rivera portfolio template" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://example.com/" />
+    <meta name="twitter:title" content="Alex Rivera | Full-Stack Engineer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio template for a full-stack engineer. Replace this copy with your own work, skills, and contact details."
+    />
+    <meta name="twitter:image" content="https://example.com/og.png" />
+    <meta name="twitter:image:alt" content="Alex Rivera portfolio template" />
+
+    <meta name="theme-color" content="#0b0f14" />
+    <meta name="msapplication-TileColor" content="#0b0f14" />
+    <meta name="color-scheme" content="dark light" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        background: #0b0f14;
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        background: #0b0f14;
+      }
+    </style>
+    <script>
+      (function () {
+        try {
+          var params = new URLSearchParams(location.search);
+          var mode = params.get("mode");
+          var palette = params.get("palette");
+          var palettes = ["base", "copper", "mark", "sage"];
+          if (mode !== "light" && mode !== "dark") {
+            mode = window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+          }
+          if (palettes.indexOf(palette) === -1) {
+            palette = palettes[Math.floor(Math.random() * palettes.length)];
+          }
+          var colors = {
+            dark: { base: "#0b0f14", copper: "#100e0c", mark: "#080c16", sage: "#0c0f0d" },
+            light: { base: "#ebe7e0", copper: "#efe6db", mark: "#e8eaf0", sage: "#e7ebe6" },
+          };
+          var root = document.documentElement;
+          root.dataset.mode = mode;
+          root.dataset.palette = palette;
+          root.style.colorScheme = mode;
+          root.style.background = colors[mode][palette];
+          document.querySelector('meta[name="theme-color"]').content =
+            colors[mode][palette];
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
