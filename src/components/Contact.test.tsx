@@ -23,10 +23,10 @@ describe("Contact", () => {
       screen.getByLabelText(/^message$/i),
       "Need help with a stalled platform.",
     );
-    await user.click(screen.getByRole("button", { name: /send message/i }));
+    await user.click(screen.getByRole("button", { name: /^send$/i }));
 
     await waitFor(() => {
-      expect(screen.getByText(/thanks\. i will get back to you/i)).toBeInTheDocument();
+      expect(screen.getByText(/message sent/i)).toBeInTheDocument();
     });
     expect(fetchMock).toHaveBeenCalledOnce();
   });
@@ -43,12 +43,10 @@ describe("Contact", () => {
     await user.type(screen.getByLabelText(/^name$/i), "Ada Lovelace");
     await user.type(screen.getByLabelText(/^email$/i), "ada@example.com");
     await user.type(screen.getByLabelText(/^message$/i), "Hello");
-    await user.click(screen.getByRole("button", { name: /send message/i }));
+    await user.click(screen.getByRole("button", { name: /^send$/i }));
 
     await waitFor(() => {
-      expect(
-        screen.getByText(/could not send just now/i),
-      ).toBeInTheDocument();
+      expect(screen.getByText(/could not send/i)).toBeInTheDocument();
     });
   });
 });

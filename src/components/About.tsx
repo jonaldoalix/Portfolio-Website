@@ -15,11 +15,11 @@ export default function About() {
             </p>
           ))}
           <p className="about-practice">
-            Practice home:{" "}
+            Business site:{" "}
             <a href={profile.practice.url} target="_blank" rel="noreferrer">
               {profile.practice.name}
             </a>
-            {". This site stays personal. That one carries the business story."}
+            {". Update or remove this line in About.tsx."}
           </p>
         </div>
         <aside className="edu-card reveal reveal--delay">

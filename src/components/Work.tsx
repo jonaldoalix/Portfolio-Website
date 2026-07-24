@@ -7,12 +7,12 @@ export default function Work() {
   return (
     <section className="section" id="work">
       <div className="section__head reveal">
-        <p className="eyebrow">Selected work</p>
-        <h2>Real products and long-running ownership</h2>
+        <p className="eyebrow">Projects</p>
+        <h2>Sample work section</h2>
         <p className="section__lede">
-          A short list of public surfaces and roles that represent how I work.
-          More lives on GitHub under your accounts. Replace this copy with the
-          orgs and handles you actually want people to find.
+          These cards are placeholders. Rewrite the titles, blurbs, and links in
+          <code> src/content.ts </code>
+          before you ship.
         </p>
       </div>
       <div className="work-list">

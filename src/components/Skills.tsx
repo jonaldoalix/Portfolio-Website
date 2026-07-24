@@ -7,7 +7,7 @@ export default function Skills() {
     <section className="section section--tight" id="skills">
       <div className="section__head reveal">
         <p className="eyebrow">Skills</p>
-        <h2>Toolbox</h2>
+        <h2>Skills list</h2>
         <p className="section__lede">{skills.intro}</p>
       </div>
       <div className="skills-grid">

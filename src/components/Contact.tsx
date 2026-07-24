@@ -47,7 +47,7 @@ export default function Contact() {
     } catch {
       setStatus("error");
       setError(
-        `Could not send just now. Email me directly at ${profile.email}.`,
+        `Could not send. Email ${profile.email} directly, or fix the form endpoint.`,
       );
     }
   }
@@ -87,17 +87,15 @@ export default function Contact() {
           </div>
           <div className="contact-copy__foot">
             <div className="contact-expect">
-              <p className="hero__panel-label">Expect</p>
-              <p>
-                A direct reply from me, usually within a couple of business days.
-              </p>
+              <p className="hero__panel-label">Response time</p>
+              <p>TODO: set expectations for how fast you reply.</p>
             </div>
             <p className="resume-note">
-              Prefer a resume?{" "}
+              {contact.resumeNote}{" "}
               <a href={profile.linkedin} target="_blank" rel="noreferrer">
                 LinkedIn
-              </a>{" "}
-              is the current overview while I refresh the PDF.
+              </a>
+              .
             </p>
           </div>
         </div>
@@ -113,7 +111,7 @@ export default function Contact() {
           </label>
           <label>
             Subject
-            <input name="subject" type="text" defaultValue="Project inquiry" />
+            <input name="subject" type="text" defaultValue="Hello" />
           </label>
           <label>
             Message
@@ -121,7 +119,7 @@ export default function Contact() {
               name="message"
               rows={6}
               required
-              placeholder="What feels stuck, slow, or harder than it should be?"
+              placeholder="Write your message here."
             />
           </label>
           <button
@@ -133,18 +131,17 @@ export default function Contact() {
               ? "Sending…"
               : status === "sent"
                 ? "Sent"
-                : "Send message"}
+                : "Send"}
           </button>
           {status === "sent" ? (
             <p className="form-hint form-hint--ok">
-              Thanks. I will get back to you.
+              Message sent. Replace this confirmation copy if you want.
             </p>
           ) : error ? (
             <p className="form-hint form-hint--err">{error}</p>
           ) : (
             <p className="form-hint">
-              Sends straight to my inbox. First use may ask you to confirm the
-              address once.
+              Wire this form to your mail provider, then update this helper text.
             </p>
           )}
         </form>

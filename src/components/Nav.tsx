@@ -149,7 +149,7 @@ export default function Nav({ theme, onThemeChange }: NavProps) {
             </span>
           </button>
           <a className="nav-cta" href="#contact">
-            Inquire
+            Contact
           </a>
         </div>
       </div>

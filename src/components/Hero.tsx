@@ -54,7 +54,7 @@ export default function Hero() {
             <p className="hero__panel-label">{hero.panel.nextLabel}</p>
             <p>{hero.panel.next}</p>
             <a className="hero__panel-link" href="#contact">
-              Start a conversation
+              Go to contact
             </a>
           </div>
         </aside>

@@ -10,24 +10,20 @@ describe("App", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: /systems that hold up in production/i,
+        name: /building websites and apps for the web/i,
       }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", {
-        name: /real products and long-running ownership/i,
-      }),
-    ).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /toolbox/i })).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: /where the work has lived/i }),
+      screen.getByRole("heading", { name: /sample work section/i }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: /a person behind the practice/i }),
+      screen.getByRole("heading", { name: /skills list/i }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: /start a conversation/i }),
+      screen.getByRole("heading", { name: /work history/i }),
     ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /about me/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /^contact$/i })).toBeInTheDocument();
   });
 
   it("toggles light and dark mode from the nav", async () => {

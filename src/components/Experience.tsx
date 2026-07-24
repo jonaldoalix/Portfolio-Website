@@ -7,7 +7,7 @@ export default function Experience() {
     <section className="section" id="experience">
       <div className="section__head reveal">
         <p className="eyebrow">Experience</p>
-        <h2>Where the work has lived</h2>
+        <h2>Work history</h2>
       </div>
       <ol className="timeline">
         {experience.map((job) => (
