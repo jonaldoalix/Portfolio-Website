@@ -29,7 +29,7 @@ export type LoadedContent = {
 
 function canUseStorage(): boolean {
   try {
-    return typeof window !== "undefined" && !!window.localStorage;
+    return !!window.localStorage;
   } catch {
     return false;
   }
@@ -87,7 +87,6 @@ function isPortfolioContent(value: unknown): value is PortfolioContent {
 }
 
 function shouldForceRefresh(): boolean {
-  if (typeof window === "undefined") return false;
   const params = new URLSearchParams(window.location.search);
   return params.get("refresh") === "1" || params.get("content") === "refresh";
 }
@@ -114,8 +113,8 @@ export async function loadPortfolioContent(): Promise<LoadedContent> {
   const cacheIsFresh =
     !!cached && Date.now() - cached.fetchedAt < CONTENT_TTL_MS && !forceRefresh;
 
-  if (cacheIsFresh && cached) {
-    return { content: cached.content, source: "cache", fromCache: true };
+  if (cacheIsFresh) {
+    return { content: cached!.content, source: "cache", fromCache: true };
   }
 
   try {

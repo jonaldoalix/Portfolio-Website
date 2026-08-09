@@ -113,7 +113,7 @@ export function applyTheme({ mode, palette }: ThemeInput): AppliedTheme {
   return {
     mode: nextMode,
     palette: nextPalette,
-    label: `${nextMode === "light" ? "Light" : "Dark"} · ${paletteMeta?.label ?? nextPalette}`,
+    label: `${nextMode === "light" ? "Light" : "Dark"} · ${paletteMeta!.label}`,
   };
 }
 

@@ -15,13 +15,14 @@ export default defineConfig({
       exclude: [
         "src/main.tsx",
         "src/vite-env.d.ts",
-        "src/firebase.ts",
-        "src/useContent.ts",
         "src/test/**",
         "src/**/*.test.{ts,tsx}",
       ],
       thresholds: {
-        lines: 80,
+        statements: 100,
+        branches: 100,
+        functions: 100,
+        lines: 100,
       },
     },
   },
