@@ -1,5 +1,5 @@
 # Multi-stage: build the Vite app, serve with nginx.
-FROM node:24-bookworm-slim AS build
+FROM node:24.22.1-bookworm-slim AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
